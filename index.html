@@ -1,72 +1,247 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-png-full-colour-glyph-1200x1199.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+            Instagram
+          </a>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Post
+            </button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                      </svg>                  
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibilyty</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Date e</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">log out </a></li>
+                </ul>
+              </div>
+          </form>
+        </div>
+      </nav>
+      <p>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col">
+              <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="true" aria-controls="multiCollapseExample1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                </svg>
+              </button>
+              <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                </svg>
+      
+              </button>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        
+      </p>
+      <div class="row">
+        <div class="col-12">
+          <div class="collapse multi-collapse show" id="multiCollapseExample1">
+            <div class="container text-center">
+              
+              <div class="row">
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://th.bing.com/th/id/R.e9b7d4e162085c3b4bb643fd1154f423?rik=mGhGfXIV4zOjxQ&riu=http%3a%2f%2fcdn.pinkermoda.com%2fpinkermoda%2f2016%2f04%2f1.Dolce-Gababna-016.jpg&ehk=%2bBraYQEoA5HbtQXtA1C4gDidyzRFD%2fJxHwtwZeS9N2w%3d&risl=&pid=ImgRaw&r=0">
+                  </div> 
+                </div>
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://th.bing.com/th/id/OIP.0SIGK2G-ZCp59TbJ1nsA3wHaK8?pid=ImgDet&rs=1">
 
-<head>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="script"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="contenedor">
-        <div class="page">
-            <div class="page-header">
-                <div class="page-body">
-                    <div class="post">
-                        <div class="post-header">
-                            <div class="post-header-icons">
-                                <img
-                                    src="https://th.bing.com/th/id/R.10c3e19a635ca683a445da8a00cdec43?rik=S1q5nmJrMj%2fGfg&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f152%2f152843.png&ehk=J%2bDF01%2b3aXY9%2bhCx8uVzCvHtAbaTVAfqZWZQ82FKyAs%3d&risl=&pid=ImgRaw&r=0" />
-                            </div>
-                            <div class="post-header-text">
-                                <p>HTML</p>
-                                <p>Christian</p>
-                            </div>
-
-                            <div class="post-header-options">
-                                <img
-                                    src="https://i.pinimg.com/originals/b9/f0/5d/b9f05ddba70a49ff8cb3522d8ef08e80.png" />
-                            </div>
-
-                        </div>
-                        <div class="post-body">
-                            <img src="https://media.gq.com.mx/photos/60cf8f0a33c54bdef67610ee/16:9/w_1920,c_limit/paisaje.jpg"
-                                alt="paisaje de montañas">
-                        </div>
-                        <div class="post-footer">
-                            <div class="post-footer-icons">
-                                <img src="https://cdn.icon-icons.com/icons2/1744/PNG/512/3643770-favorite-heart-like-likes-love-loved_113432.png"
-                                    alt="" />
-                                <img src="https://i.pinimg.com/736x/9d/a1/11/9da111c9b37d0f31a03672009949ebeb.jpg"
-                                    alt="" />
-                                <img src="https://i.pinimg.com/236x/cc/0d/f6/cc0df615addfb256ca6b394d31b2777d.jpg"
-                                    alt="Send" />
-
-                                <img class="icon-right"
-                                    src="https://cdn3.iconfinder.com/data/icons/instagram-18/512/196_Flag_Instagram_Interface_Save_Tag-512.png"
-                                    alt="Mark" />
-
-                            </div>
-                            <div class="post-footer-likes">
-                                <p>Liked by pepito and 120000 others</p>
-                            </div>
-                            <div class="post-footer-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue consequat,
-                                    aliquet felis sit amet, pretium nibh. Vestibulum vitae dolor viverra, mollis dui ac,
-                                    dapibus ipsum. Ut sagittis, augue nec tempor tincidunt, nulla odio aliquet lorem,
-                                    vitae facilisis leo nunc vel massa. Nunc sollicitudin a sapien a fringilla. Proin
-                                    aliquam ullamcorper posuere. Mauris dui ex, vulputate eu fringilla sed, ultricies
-                                    porttitor nibh. Maecenas consequat</p>
-                            </div>
-                        </div>
+                  </div> 
+                </div>
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://i.pinimg.com/originals/8e/20/62/8e20626464ee04f90f2c4abf9ae7bc72.jpg">
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://th.bing.com/th/id/OIP.cXzYdbqADXHZwMN2kqRb3AAAAA?pid=ImgDet&w=340&h=340&rs=1">
+                  </div> 
+                </div>
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://th.bing.com/th/id/R.750865ece872cd5ae0a4c5d4d84ed199?rik=1a13UKYSp1OPmA&riu=http%3a%2f%2fwww.masdemoda.com%2fwp-content%2fuploads%2f2012%2f12%2fmoda-para-hombre-2013-5.jpg&ehk=dBIFZckfkLPkN9tiP5uInFwNkesUWkkmP6fX9%2fVeFmc%3d&risl=&pid=ImgRaw&r=0">
+                  </div> 
+                </div>
+                <div class="col-4 insta-card">
+                  <div class="">
+                    <img class="insta-size" src="https://estasdemoda.com/wp-content/uploads/2014/04/moda_hombre-1.jpg">
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="card post">
+                    <div class="post-header">
+                        <p class="texto1">My first photo</p>
+                        <p class="texto2">1/6</p>
+                    </div>
+                    <div class="post-body">
+                        <img src="https://th.bing.com/th/id/R.e9b7d4e162085c3b4bb643fd1154f423?rik=mGhGfXIV4zOjxQ&riu=http%3a%2f%2fcdn.pinkermoda.com%2fpinkermoda%2f2016%2f04%2f1.Dolce-Gababna-016.jpg&ehk=%2bBraYQEoA5HbtQXtA1C4gDidyzRFD%2fJxHwtwZeS9N2w%3d&risl=&pid=ImgRaw&r=0"/>
+                    </div>
+                    <div class="post-footer">
+                      <p><strong>520 like</strong></p>
+                        <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
                     </div>
                 </div>
+                <div class="card post">
+                  <div class="post-header">
+                      <p class="texto1">My second photo</p>
+                      <p class="texto2">2/6</p>
+                  </div>
+                  <div class="post-body">
+                      <img src="https://th.bing.com/th/id/OIP.0SIGK2G-ZCp59TbJ1nsA3wHaK8?pid=ImgDet&rs=1"/>
+                  </div>
+                  <div class="post-footer">
+                    <p><strong>320 like</strong></p>
+                      <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
+                  </div>
+              </div>
+              <div class="card post">
+                <div class="post-header">
+                    <p class="texto1">My third photo</p>
+                    <p class="texto2">3/6</p>
+                </div>
+                <div class="post-body">
+                    <img src="https://i.pinimg.com/originals/8e/20/62/8e20626464ee04f90f2c4abf9ae7bc72.jpg"/>
+                </div>
+                <div class="post-footer">
+                  <p><strong>950 like</strong></p>
+                    <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
+                </div>
+            </div>
+            <div class="card post">
+              <div class="post-header">
+                  <p class="texto1">My fourth photo</p>
+                  <p class="texto2">4/6</p>
+              </div>
+              <div class="post-body">
+                  <img src="https://th.bing.com/th/id/OIP.cXzYdbqADXHZwMN2kqRb3AAAAA?pid=ImgDet&w=340&h=340&rs=1"/>
+              </div>
+              <div class="post-footer">
+                <p><strong>756 like</strong></p>
+                  <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
+              </div>
+          </div>
+          <div class="card post">
+            <div class="post-header">
+                <p class="texto1">My fiveth photo</p>
+                <p class="texto2">5/6</p>
+            </div>
+            <div class="post-body">
+                <img src="https://th.bing.com/th/id/R.750865ece872cd5ae0a4c5d4d84ed199?rik=1a13UKYSp1OPmA&riu=http%3a%2f%2fwww.masdemoda.com%2fwp-content%2fuploads%2f2012%2f12%2fmoda-para-hombre-2013-5.jpg&ehk=dBIFZckfkLPkN9tiP5uInFwNkesUWkkmP6fX9%2fVeFmc%3d&risl=&pid=ImgRaw&r=0"/>
+            </div>
+            <div class="post-footer">
+              <p><strong>850 like</strong></p>
+                <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
             </div>
         </div>
-    </div>
-</body>
+        <div class="card post">
+          <div class="post-header">
+              <p class="texto1">My sixth photo</p>
+              <p class="texto2">6/6</p>
+          </div>
+          <div class="post-body">
+              <img src="https://estasdemoda.com/wp-content/uploads/2014/04/moda_hombre-1.jpg"/>
+          </div>
+          <div class="post-footer">
+            <p><strong>950 like</strong></p>
+              <p>This is my first photo of the this is a multi line cpnment for testing purposes i am lesming to code with #breathecode</p>
+          </div>
+      </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Add the caption of your post here</textarea>
+                <button type="button" class="btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                      </svg>
+                </button>
+                <button type="button" class="btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                </button>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>
